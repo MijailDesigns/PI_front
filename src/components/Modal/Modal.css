@@ -1,0 +1,31 @@
+.modal{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.button{
+    border: solid #61481C;
+    border-radius: 10rem;
+    padding: 0.5rem 1rem;
+    color: white;
+    background-color: #E6B325;
+    transition: ease 0.4s;
+    font-size: 1rem;
+    /* background-color: #5C19AE; */
+    cursor: pointer;
+
+}
+
+.button a{
+    text-decoration: none;
+    color: white;
+}

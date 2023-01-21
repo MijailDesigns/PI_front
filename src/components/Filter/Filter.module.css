@@ -1,0 +1,18 @@
+
+
+
+.inputs{
+    margin: 5px;
+    border: solid #61481C;
+    border-radius: 10rem;
+    padding: 0.3rem 0.7rem;
+    font-size: 0.8rem;
+    color: #61481C;
+    background-color: white;
+    box-sizing: border-box;
+}
+
+.label{
+    font-weight: 500;
+    color: white
+}

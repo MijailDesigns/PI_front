@@ -1,0 +1,52 @@
+
+.flexContainer {
+    background-image: url(../../images/fondo.jpg);
+    background-repeat: repeat;
+    height: 100%;
+    background-size: cover;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding: 50px;
+    min-height: 90vh
+  }
+  
+.loading{
+  margin: auto;
+}
+  
+.flexContainer > div {
+  width: 25%;
+  text-align: center;
+  margin: 30px auto;
+}
+
+@media screen and (max-width: 1100px) {
+  .flexContainer > div {
+    width: 30%;
+    text-align: center;
+    margin: 10px auto;
+  }
+
+}
+
+@media screen and (max-width: 700px) {
+  .flexContainer > div {
+    width: 40%;
+    text-align: center;
+    margin: 10px auto;
+  }
+
+  .flexContainer {
+    padding-top: 100px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .flexContainer > div {
+    width: 80%;
+    text-align: center;
+    margin: 10px auto;
+  }
+}
+

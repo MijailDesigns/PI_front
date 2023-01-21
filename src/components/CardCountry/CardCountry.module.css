@@ -1,0 +1,34 @@
+.card{
+    border: 2px solid black;
+    border-radius: 30px;
+    background-color: rgb(19 59 76 / 50%);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    max-height: 264px;
+    margin-top: 0px;
+}
+
+.card img{
+    height: 100px;
+    width: auto;
+}
+
+.button{
+    margin-top: 10px;
+    border: solid #d0c9d8;
+    border-radius: 10rem;
+    padding: 0.5rem 1rem;
+    color: white;
+    font-weight: 400;
+    background-color: #E6B325;
+    transition: ease 0.4s;
+    font-size: 1rem;
+    /* background-color: #5C19AE; */
+    cursor: pointer;
+}
+
+.button a{
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+}

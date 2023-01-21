@@ -1,0 +1,96 @@
+.container{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    background-image: url('../../images/fondo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+
+
+.title{
+    color: white;
+}
+
+.createDiv{
+    height: 100vh; 
+}
+
+.countries{
+    height: 80vh;
+    margin: 0 30px;
+    overflow-y: scroll;
+    background-color: rgb(19 59 76 / 50%);
+}
+
+.flag:disabled{
+    opacity: 0.4;
+}
+
+.danger{
+    color: red;
+    font-weight: bold;
+}
+
+.label{
+    font-weight: 500;
+    color: white;
+}
+
+.inputs{
+    margin-left: 10px;
+    width: 60%;
+    border: solid #61481C;
+    border-radius: 10rem;
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+    color: #61481C;
+    background-color: white;
+    box-sizing: border-box;
+}
+
+.selectedCountries{
+    height: 60px;
+    overflow-y: auto;
+}
+
+.textCountry{
+    font-weight: bold;
+    color: white;   
+}
+
+.btnCountry{
+    font-weight: 500;
+}
+
+.createBtn{
+    margin-top: 5px;
+    margin-left: 10px;
+    border: solid #61481C;
+    border-radius: 10rem;
+    padding: 0.5rem 1rem;
+    color: #FFF;
+    transition: ease 0.4s;
+    font-size: 0.8rem;
+    background-color: #61481C;
+    color: white;
+}
+
+.createBtn:disabled{
+    border: solid rgba(97, 72, 28, 0.4);
+    background-color: rgba(97, 72, 28, 0.4);
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.createBtn:hover{
+    color: #61481C;
+    background-color: #FFF;
+}
+
+@media screen and (max-width: 600px) {
+    .container{
+        margin-top: 100px;
+    }
+}

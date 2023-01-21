@@ -1,0 +1,26 @@
+.button{
+    margin-left: 3px;
+    border: solid #61481C;
+    border-radius: 10px;
+    padding: 0.3rem 0.5rem;
+    color: white;
+    font-weight: 400;
+    background-color: #E6B325;
+    /* transition: ease 0.4s; */
+    font-size: 0.8rem;
+    /* background-color: #5C19AE; */
+    cursor: pointer;
+}
+
+.button:disabled{
+    border: solid #61481C;
+    /* border-radius: 5rem; */
+    padding: 0.3rem 0.5rem;
+    color: rgb(255, 255, 255, 0.4);
+    font-weight: 400;
+    background-color: rgba(230, 179, 37, 0.4);
+    transition: ease 0.4s;
+    font-size: 0.8rem;
+    /* background-color: #5C19AE; */
+    cursor: pointer;
+}

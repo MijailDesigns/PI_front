@@ -1,0 +1,80 @@
+.detailContainer{
+    background-image: url(../../images/fondo.jpg);
+    height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    overflow-y: hidden;
+}
+
+.flag{
+    box-sizing: border-box;
+    padding: 30px;
+}
+
+.imgFlag{
+    height: 450px;
+}
+
+.button{
+    float: left;
+    margin: 10px 0;
+    border: solid #d0c9d8;
+    border-radius: 10rem;
+    padding: 0.5rem 1rem;
+    color: white;
+    font-weight: 400;
+    background-color: #E6B325;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerText{
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 30px;
+    border-radius: 15px;
+    margin-top: 100px;
+    max-width: 100%;
+    overflow: auto;
+    max-height: 470px;
+}
+
+@media screen and (max-width: 1350px) {
+    .imgFlag{
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .detailContainer{
+        padding-top: 50px;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .containerText{
+        margin: 30px 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .detailContainer{
+        padding-top: 100px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .imgFlag{
+        height: 250px;
+    }
+}
+
+

@@ -1,0 +1,24 @@
+.button{
+    border: solid #d0c9d8;
+    border-radius: 10rem;
+    padding: 0.5rem 1rem;
+    color: white;
+    background-color: #E6B325;
+    transition: ease 0.4s;
+    font-size: 1rem;
+    /* background-color: #5C19AE; */
+    cursor: pointer;
+
+}
+
+.button a{
+    text-decoration: none;
+    color: white;
+}
+
+.cardContainer{
+    background-color: rgba(255, 255, 255, 0.4);
+    padding-bottom: 15px;
+    border-radius: 15px;
+    height: fit-content;
+}
