@@ -16,7 +16,7 @@ const CountryDetail = (props) => {
     const detail = useSelector(state => state.detail);
     useEffect(() => {
         return dispatch(getCountryDetail(id))
-    }, [])
+    }, [dispatch, id])
 
 
   return (

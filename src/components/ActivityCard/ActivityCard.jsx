@@ -1,16 +1,12 @@
 import React from 'react';
 import x from './ActivityCard.module.css'
 import { useState } from 'react';
-import { Link, useHistory } from 'react-router-dom'
-import { useDispatch } from 'react-redux';
-import { getActivityById } from '../../redux/actions';
+import { Link } from 'react-router-dom'
 import Modal from '../Modal/Modal';
 
 
 const ActivityCard = ({handleDelete, id, name, difficulty, duration, season, countries}) => {
 
-    let dispatch = useDispatch();
-    let history = useHistory();
 
     const [show, setShow] = useState(false)
 

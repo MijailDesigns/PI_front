@@ -12,7 +12,7 @@ const Activities = () => {
 
     useEffect(() => {
         dispatch(getActivities())
-    }, [])
+    }, [dispatch])
 
     const handleDelete = (e) => {
         dispatch(deleteActivity(e.target.id)); 

@@ -3,7 +3,7 @@ import y from './CreateActivity.module.css'
 import { useSelector, useDispatch } from 'react-redux';
 import { useState, useEffect } from 'react';
 import { useHistory, useParams } from 'react-router-dom';
-import { addActivity, getCountriesForActivity, getActivities, updateActivity, loading } from '../../redux/actions';
+import { addActivity, getCountriesForActivity, getActivities, updateActivity } from '../../redux/actions';
 
 const CreateActivity = () => {
 
@@ -58,7 +58,7 @@ const CreateActivity = () => {
 
         dispatch(getCountriesForActivity(lookFor));
         dispatch(getActivities());
-    }, [lookFor])
+    }, [dispatch, lookFor])
 
    
 
