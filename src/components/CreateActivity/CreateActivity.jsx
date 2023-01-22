@@ -22,6 +22,7 @@ const CreateActivity = () => {
     console.log(update);
 
     const [errors, setErrors] = React.useState({});
+    const [send, setSend] = React.useState(false);
 
     const [input, setInput] = useState({
         name: (update && update.name) || '',
@@ -101,7 +102,7 @@ const CreateActivity = () => {
         setErrors(validate(input));
         if (Object.keys(errors).length === 0) {
             dispatch(addActivity(input))
-            alert('Activity created successfully');
+            setSend(true)
             setInput({
                 name: '',
                 difficulty: '',
@@ -109,7 +110,10 @@ const CreateActivity = () => {
                 season: '',
                 country: []
                 })
-            navigate.push("/activities");
+            setTimeout(() => {
+                navigate.push("/activities");
+            }, 3000);
+            
         }
         return;
     }
@@ -131,7 +135,7 @@ const CreateActivity = () => {
         // }
         // return;
         dispatch(updateActivity(e.target.id, input))
-        alert('Activity updated successfully');
+        setSend(true)
         setInput({
             name: '',
             difficulty: '',
@@ -139,7 +143,9 @@ const CreateActivity = () => {
             season: '',
             country: []
             })
-        navigate.push("/activities");
+        setTimeout(() => {
+            navigate.push("/activities");
+        }, 3000);
     }
 
   return (
@@ -231,6 +237,8 @@ const CreateActivity = () => {
                         <p className={y.danger}>{errors.country}</p>
                     )}
                 </div>
+
+                {send && <div> <p className={y.success}>¡Activity {update ? "updated" : "created"} successfully!</p> </div>}
                 
                 {!update && <button className={y.createBtn} type='submit' disabled={Object.keys(errors).length > 0 || input.name === "" ? true : false}>Create Activity</button>}
                 {update && <button className={y.createBtn} type='submit'>Update Activity</button>}

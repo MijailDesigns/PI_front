@@ -10,6 +10,18 @@
     padding: 50px;
     min-height: 90vh
   }
+
+  .flexContainerE {
+    background-image: url(../../images/fondo.jpg);
+    background-repeat: repeat;
+    height: 100%;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    min-height: 90vh
+  }
   
 .loading{
   margin: auto;
@@ -48,5 +60,23 @@
     text-align: center;
     margin: 10px auto;
   }
+}
+
+.button{
+  border: solid #d0c9d8;
+  border-radius: 10rem;
+  padding: 0.5rem 1rem;
+  color: white;
+  background-color: #E6B325;
+  transition: ease 0.4s;
+  font-size: 1rem;
+  /* background-color: #5C19AE; */
+  cursor: pointer;
+
+}
+
+.button a{
+  text-decoration: none;
+  color: white;
 }
 
