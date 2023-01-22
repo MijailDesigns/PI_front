@@ -7,6 +7,7 @@ import NavBar from './components/NavBar/NavBar.jsx'
 import CreateActivity from './components/CreateActivity/CreateActivity';
 import CountryDetail from './components/Details/CountryDetail';
 import Activities from './components/Activities/Activities';
+import About from './components/About/About';
 
 function App() {
   return (
@@ -15,11 +16,14 @@ function App() {
       <Route exact path='/'>
         <LandingPage />
       </Route>
-      <Route exact path={['/home','/createActivity/:id', '/activities', '/countryDetail/:id']}>
+      <Route exact path={['/home', '/about','/createActivity/:id', '/activities', '/countryDetail/:id']}>
         <NavBar />
       </Route>
       <Route path='/home'>
         <Home />
+      </Route>
+      <Route path='/about'>
+        <About />
       </Route>
       <Route path='/createActivity/:id'>
         <CreateActivity />
