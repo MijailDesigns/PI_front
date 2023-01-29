@@ -2,6 +2,7 @@
 export const GET_COUNTRIES = 'GET_COUNTRIES';
 export const ORDER_BY = 'ORDER_BY'
 export const GET_COUNTRY_DETAIL="GET_COUNTRY_DETAIL";
+export const CLEAN_DETAIL="CLEAN_DETAIL";
 export const GET_COUNTRY_FOR_ACTIVITY="GET_COUNTRY_FOR_ACTIVITY";
 export const ADD_ACTIVITY = 'ADD_ACTIVITY';
 export const GET_ACTIVITIES="GET_ACTIVITIES";
@@ -106,6 +107,12 @@ export const getCountryDetail = (id) => {
         return fetch(`${URL}/countries/${id}`)
         .then(res => res.json()
         .then(json => dispatch({type: GET_COUNTRY_DETAIL, payload: json})))
+    }
+}
+
+export const cleanDetail = () => {
+    return {
+        type: CLEAN_DETAIL
     }
 }
 

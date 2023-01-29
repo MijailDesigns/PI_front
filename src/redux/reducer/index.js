@@ -1,4 +1,4 @@
-import { GET_COUNTRIES, ORDER_BY, GET_COUNTRY_DETAIL, GET_COUNTRY_FOR_ACTIVITY, GET_ACTIVITIES, ADD_ACTIVITY, DELETE_ACTIVITY_BY_ID, UPDATE_ACTIVITY } from "../actions";
+import { GET_COUNTRIES, ORDER_BY, GET_COUNTRY_DETAIL, GET_COUNTRY_FOR_ACTIVITY, GET_ACTIVITIES, ADD_ACTIVITY, DELETE_ACTIVITY_BY_ID, UPDATE_ACTIVITY, CLEAN_DETAIL } from "../actions";
 
 const inicialState = {
     countries: [],
@@ -81,6 +81,11 @@ const rootReducer = (state = inicialState, action) => {
             return{
                 ...state, 
                 detail: action.payload
+            }
+        case CLEAN_DETAIL:
+            return{
+                ...state,
+                detail: {}
             }
         case GET_COUNTRY_FOR_ACTIVITY:
             return {

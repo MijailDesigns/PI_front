@@ -3,7 +3,7 @@ import d from './CountryDetail.module.css'
 import { useHistory, useParams } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from 'react';
-import { getCountryDetail } from '../../redux/actions';
+import { getCountryDetail, cleanDetail } from '../../redux/actions';
 
 const CountryDetail = (props) => {
 
@@ -14,9 +14,16 @@ const CountryDetail = (props) => {
 
     const dispatch = useDispatch();
     const detail = useSelector(state => state.detail);
+    
     useEffect(() => {
-        return dispatch(getCountryDetail(id))
+        dispatch(getCountryDetail(id))
     }, [dispatch, id])
+
+    useEffect(() => {
+        return () => {
+            dispatch(cleanDetail())
+          };
+    }, [dispatch])
 
 
   return (
