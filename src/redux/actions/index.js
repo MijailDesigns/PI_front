@@ -9,7 +9,7 @@ export const GET_ACTIVITIES="GET_ACTIVITIES";
 export const DELETE_ACTIVITY_BY_ID="DELETE_ACTIVITY_BY_ID";
 export const GET_ACTIVITY_BY_ID="DELETE_ACTIVITY_BY_ID";
 export const UPDATE_ACTIVITY="UPDATE_ACTIVITY";
-const URL = 'piback-production-8289.up.railway.app'
+const URL = 'https://piback-production-8289.up.railway.app'
 
 export function loading (){
     return {
